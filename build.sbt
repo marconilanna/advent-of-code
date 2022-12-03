@@ -17,6 +17,7 @@ lazy val root = project.in(file(".")).settings(
 
 lazy val common = project.settings(commonSettings)
 
+lazy val aoc2021 = project.in(file("2021")).settings(commonSettings).dependsOn(common)
 lazy val aoc2022 = project.in(file("2022")).settings(commonSettings).dependsOn(common)
 
 val commonSettings = Seq(
