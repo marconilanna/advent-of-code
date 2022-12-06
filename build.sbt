@@ -17,6 +17,7 @@ lazy val root = project.in(file(".")).settings(
 
 lazy val common = project.settings(commonSettings)
 
+lazy val aoc2016 = project.in(file("2016")).settings(commonSettings).dependsOn(common)
 lazy val aoc2017 = project.in(file("2017")).settings(commonSettings).dependsOn(common)
 lazy val aoc2018 = project.in(file("2018")).settings(commonSettings).dependsOn(common)
 lazy val aoc2019 = project.in(file("2019")).settings(commonSettings).dependsOn(common)
