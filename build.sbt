@@ -25,11 +25,12 @@ lazy val aoc2019 = project.in(file("2019")).settings(commonSettings).dependsOn(c
 lazy val aoc2020 = project.in(file("2020")).settings(commonSettings).dependsOn(common)
 lazy val aoc2021 = project.in(file("2021")).settings(commonSettings).dependsOn(common)
 lazy val aoc2022 = project.in(file("2022")).settings(commonSettings).dependsOn(common)
+lazy val aoc2023 = project.in(file("2023")).settings(commonSettings).dependsOn(common)
 
 val commonSettings = Seq(
   Compile / scalaSource := baseDirectory.value
 , Compile / resourceDirectory := (Compile / scalaSource).value / "resources"
-, scalaVersion := "3.2.1"
+, scalaVersion := "3.3.1"
 , scalacOptions ++= Seq(
     "-deprecation" // Emit warning and location for usages of deprecated APIs
   , "-encoding", utf8 // Specify character encoding used by source files
